@@ -12,6 +12,7 @@ int search(int arr[],int n,int x)
     }
     return -1;
 }
+
 int main()
 {
     int arr[]= {20,5,7,25};
