@@ -1,0 +1,61 @@
+//Problem Statement:- Find the first occurrence index of minimum element in the array and maximum element and divide the array into three parts first from minimum element to max element
+//second from 0 to min element and 3rd max to end element
+
+#include<bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+    }
+    int min=INT_MAX;
+    int minimum;
+
+    int max=INT_MIN;
+    int maximum;
+    for(int i=0;i<n;i++)
+    {
+        if(arr[i]>max)
+        {
+            max=arr[i];
+            maximum=i;
+        }
+        if(arr[i]<min)
+        {
+            min=arr[i];
+            minimum=i;
+
+        }
+    }
+    vector<int>ans;
+    for(int i=minimum;i<maximum;i++)
+    {
+        ans.push_back(arr[i]);
+    }
+    for(int i=0;i<minimum;i++)
+    {
+        ans.push_back(arr[i]);
+    }
+    for(int i=maximum;i<n;i++)
+    {
+        ans.push_back(arr[i]);
+    }
+    cout<<max<<endl;
+    cout<<min<<endl;
+    cout<<maximum<<endl;
+    cout<<minimum<<endl;
+    for(int i=0;i<ans.size();i++)
+    {
+        cout<<ans[i]<<" ";
+    }
+
+
+    return 0;
+
+}
