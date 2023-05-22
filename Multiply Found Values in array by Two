@@ -1,0 +1,26 @@
+#include <iostream>
+#include<bits/stdc++.h>
+
+using namespace std;
+int finalval(vector<int>& nums, int original) {
+        int n=nums.size();
+        int new_original=original;
+        for(int i=0;i<n;i++)
+        {
+            if(nums[i]==new_original)
+            {
+                 new_original=new_original*2;
+                 i=-1;
+            }
+
+        }
+        return new_original;
+    }
+
+int main()
+{
+    vector<int> nums={5,3,6,1,12};
+    int original=3;
+    cout<<finalval(nums,original);
+    return 0;
+}
