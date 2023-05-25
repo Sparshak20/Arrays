@@ -1,0 +1,20 @@
+#include <iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int maxiproduct(vector<int>& nums) {
+        int n=nums.size();
+        sort(nums.begin(),nums.end());
+        int ans=nums[n-1]*nums[n-2]*nums[n-3];
+        int anss=nums[0]*nums[1]*nums[n-1];
+        return max(ans,anss);
+    }
+int main()
+{
+    vector<int>nums(5);
+    for(int i=0;i<nums.size();i++)
+    {
+        cin>>nums[i];
+    }
+    cout<<maxiproduct(nums);
+    return 0;
+}
