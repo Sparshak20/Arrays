@@ -2,6 +2,8 @@ Given a 0-indexed array nums of size n, consisting of non-negative integers, app
 In each operation, if nums[i] is equal to nums[i + 1], multiply nums[i] by 2 and set nums[i + 1] to 0. 
 Finally, shift all the 0's to the end of the array. Return the resulting array.
 
+
+
 #include <iostream>
 #include<bits/stdc++.h>
 
