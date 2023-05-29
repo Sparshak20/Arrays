@@ -1,0 +1,19 @@
+//To calculate the new arrival time of a train, add the arrival time in hours to the delayed time in hours. Ensure the time remains in the 24-hour format.
+//For example, if the original arrival time is 14:30 and the delay is 2 hours, the train will arrive at 16:30.
+#include <iostream>
+#include<bits/stdc++.h>
+
+using namespace std;
+int delay(int arrivaltime, int delayedtime) {
+        return (arrivaltime+delayedtime)%24;
+    }
+
+int main()
+{
+    int arrivaltime;
+    cin>>arrivaltime;
+    int delayedtime;
+    cin>>delayedtime;
+    cout<<delay(arrivaltime,delayedtime);
+    return 0;
+}
