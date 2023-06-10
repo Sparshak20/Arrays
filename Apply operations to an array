@@ -3,7 +3,6 @@ In each operation, if nums[i] is equal to nums[i + 1], multiply nums[i] by 2 and
 Finally, shift all the 0's to the end of the array. Return the resulting array.
 
 
-
 #include <iostream>
 #include<bits/stdc++.h>
 
