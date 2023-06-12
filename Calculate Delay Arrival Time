@@ -3,6 +3,7 @@
 #include <iostream>
 #include<bits/stdc++.h>
 
+
 using namespace std;
 int delay(int arrivaltime, int delayedtime) {
         return (arrivaltime+delayedtime)%24;
